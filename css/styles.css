@@ -16,6 +16,12 @@
   font-family: Figtree;
   src: url(/assets/fonts/Figtree-VariableFont_wght.ttf);
 }
+@media (max-width: 991px) {
+  .project-card img {
+    max-height: 250px;
+    object-fit: cover;
+  }
+}
 #fluid {
   position: fixed;
   inset: 0;
@@ -4686,6 +4692,33 @@ fieldset:disabled .btn {
   -webkit-text-fill-color: #fff !important; 
   background: transparent; 
   background-clip: border-box; /* Resets the clipping */
+}
+
+.card-project {
+  transition: 0.5s ease-in-out;
+}
+
+.card-project:hover {
+  transform:translateY(-20px);
+transform: scale(1.05);
+}
+
+.project-card h2 {
+  position: relative;
+  margin-bottom: 10px;
+  padding-bottom: 20px; 
+}
+
+/* 1. Base State */
+.project-card h2::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 10px;
+  background: linear-gradient(90deg, #0061ff 0%, #00ff87 100%);
+  border-radius: 5px;
 }
 .card-title {
   margin-bottom: 0;
