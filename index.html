@@ -1,0 +1,387 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Personal - Start Bootstrap Theme</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Custom Google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap icons-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+    <script src="js/cursor.js"></script>
+  </head>
+  <canvas
+    id="fluid"
+    style="
+      width: 100vw;
+      height: 100vh;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      pointer-events: none;
+    "
+  ></canvas>
+  <body class="d-flex flex-column h-100">
+    <main class="flex-shrink-0">
+      <!-- Navigation-->
+      <nav
+        class="navbar navbar-expand-lg navbar-light bg-white py-3 sticky-top"
+      >
+        <div class="container px-5">
+          <a class="navbar-brand" href="index.html"
+            ><span class="fw-bolder text-primary">Dario Amato</span></a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="resume.html">Resume</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="projects.html">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- Header-->
+      <header>
+        <div class="container px-5 pb-5">
+          <div class="row gx-5 align-items-center min-vh-100">
+            <div class="col-xxl-5">
+              <!-- Header text content-->
+              <div class="text-center text-xxl-start fade-in-content-left">
+                <div
+                  class="badge bg-gradient-primary-to-secondary text-white mb-4"
+                >
+                  <div class="text-uppercase">
+                    Design &middot; Develop &middot; Deploy
+                  </div>
+                </div>
+                <div class="fs-3 fw-light text-muted">
+                  Continuous learning. Continuous building.
+                </div>
+                <h1 class="display-3 fw-bolder mb-5">
+                  <span class="text-gradient d-inline"
+                    >Engineering ideas into software.</span
+                  >
+                </h1>
+                <div
+                  class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xxl-start mb-3"
+                >
+                  <a
+                    class="btn btn-secondary btn-lg px-5 py-3 me-sm-3 fs-6 fw-bolder"
+                    href="resume.html"
+                  >
+                    Resume
+                  </a>
+
+                  <a
+                    class="btn btn-lg px-5 py-3 fs-6 fw-bolder custom-button"
+                    href="projects.html"
+                  >
+                    <span>Projects</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-xxl-7">
+              <!-- Header profile picture-->
+              <div
+                class="d-flex justify-content-center mt-5 mt-xxl-0 fade-in-content-right"
+              >
+                <div>
+                  <div class="snippet-container">
+                    <div class="code-window">
+                      <div class="code-header">
+                        <div class="dots">
+                          <span class="dot red"></span>
+                          <span class="dot yellow"></span>
+                          <span class="dot green"></span>
+                        </div>
+                        <span class="file-name">DeveloperProfile.cs</span>
+                      </div>
+                      <div class="code-body">
+                        <pre><code><span class="keyword">var</span> <span class="variable">me</span> = <span class="keyword">new</span> <span class="type">SoftwareEngineer</span> 
+<span class="punctuation">{</span>
+    <span class="property">Name</span> = <span class="string">"Your Name"</span>,
+    <span class="property">Focus</span> = <span class="string">"Web & Software Engineering"</span>,
+    <span class="property">Mindset</span> = <span class="string">"Continuous Learning"</span>,
+    <span class="property">Goal</span> = <span class="string">"Building ideas into reality"</span>
+<span class="punctuation">};</span>
+
+<span class="comment">// Result: Excellence achieved.</span></code></pre>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- About Section-->
+      <section class="bg-light py-5">
+        <div class="container px-5 reveal">
+          <div class="row gx-5 justify-content-center">
+            <div class="col-xxl-8">
+              <div class="text-center my-5">
+                <h2 class="display-5 fw-bolder">
+                  <span class="text-gradient d-inline">About Me</span>
+                </h2>
+                <p class="lead fw-light mb-4">
+                  My name is Dario Amato and I'm a software engineer based in
+                  Canada.
+                </p>
+                <p class="text-muted">
+                  I'm a passionate software engineer with a love for crafting
+                  elegant solutions to complex problems. With a background in
+                  computer science and experience in graphic design, I
+                  specialize in building scalable web applications and intuitive
+                  user interfaces. When I'm not coding, you can find me
+                  exploring new technologies, contributing to open source
+                  projects, or making groundbreaking discoveries in the field of
+                  software engineering.
+                </p>
+                <div class="d-flex justify-content-center fs-2 gap-4">
+                  <a class="text-gradient" href="#!"
+                    ><i class="bi bi-instagram"></i
+                  ></a>
+                  <a class="text-gradient" href="#!"
+                    ><i class="bi bi-github"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--Project Showcase-->
+      <section class="py-5">
+        <div class="container px-5 reveal">
+          <div class="row gx-5 justify-content-center">
+            <div class="col-lg-5"></div>
+            <div class="col-lg-7">
+              <div class="text-end my-4 info">
+                <h2 class="display-5 fw-bolder">
+                  <span class="text-gradient d-inline"
+                    >Bank Account Management System</span
+                  >
+                </h2>
+                <p class="lead fw-light mb-4">
+                  A C# desktop application that simulates real-world banking
+                  tasks. It includes organized account management, checks for
+                  transaction accuracy, and stores data using .NET and SQL.
+                </p>
+              </div>
+              <div class="specifications text-end">
+                <h5 class="fw-bold">Key Features:</h5>
+                <ul class="list-unstyled">
+                  <li>
+                    Account Creation and Management
+                    <i class="bi bi-check-lg text-gradient"></i>
+                  </li>
+                  <li>
+                    Transaction Processing
+                    <i class="bi bi-check-lg text-gradient"></i>
+                  </li>
+                  <li>
+                    Customer Information Management
+                    <i class="bi bi-check-lg text-gradient"></i>
+                  </li>
+                  <li>
+                    Account Saving
+                    <i class="bi bi-check-lg text-gradient"></i>
+                  </li>
+                </ul>
+                <h5 class="fw-bold">Tools Used:</h5>
+                <ul class="list-unstyled">
+                  <li>C# <i class="bi bi-check-lg text-gradient"></i></li>
+                  <li>
+                    SQL Server
+                    <i class="bi bi-check-lg text-gradient"></i>
+                  </li>
+                  <li>
+                    .NET Framework
+                    <i class="bi bi-check-lg text-gradient"></i>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="container align-items-center d-flex justify-content-center reveal"
+        >
+          <a
+            class="btn btn-lg px-5 py-3 fs-6 fw-bolder custom-button"
+            href="projects.html"
+          >
+            <span>View More Projects</span>
+          </a>
+        </div>
+      </section>
+      <!--Coding Languages-->
+      <section class="bg-light">
+        <div class="container px-5 reveal">
+          <div class="row gx-5 justify-content-center">
+            <div class="col-xxl-8">
+              <div class="text-center my-5">
+                <h2 class="display-5 fw-bolder">
+                  <span class="text-gradient d-inline"
+                    >Technologies I Work With</span
+                  >
+                </h2>
+                <p class="lead fw-light mb-4">
+                  A curated stack of languages and tools that power my projects.
+                </p>
+                <div class="container">
+                  <div
+                    class="row justify-content-center align-items-center row-cols-sm-1 row-cols-md-2 row-cols-lg-4 g-4"
+                  >
+                    <div class="col">
+                      <div class="card h-100">
+                        <div class="card-body">
+                          <h5 class="card-title text-gradient">C#</h5>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card h-100">
+                        <div class="card-body">
+                          <h5 class="card-title text-gradient">JavaScript</h5>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card h-100">
+                        <div class="card-body">
+                          <h5 class="card-title text-gradient">Illustrator</h5>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card h-100">
+                        <div class="card-body">
+                          <h5 class="card-title text-gradient">Photoshop</h5>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card h-100">
+                        <div class="card-body">
+                          <h5 class="card-title text-gradient">InDesign</h5>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card h-100">
+                        <div class="card-body">
+                          <h5 class="card-title text-gradient">VS Code</h5>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card h-100">
+                        <div class="card-body">
+                          <h5 class="card-title text-gradient">
+                            Visual Studio
+                          </h5>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card h-100">
+                        <div class="card-body">
+                          <h5 class="card-title text-gradient">SQL</h5>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card h-100">
+                        <div class="card-body">
+                          <h5 class="card-title text-gradient">HTML</h5>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card h-100">
+                        <div class="card-body">
+                          <h5 class="card-title text-gradient">CSS</h5>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card h-100">
+                        <div class="card-body">
+                          <h5 class="card-title text-gradient">Python</h5>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card h-100">
+                        <div class="card-body">
+                          <h5 class="card-title text-gradient">Bootstrap 5</h5>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Footer-->
+    <footer class="bg-white py-4 mt-auto">
+      <div class="container px-5">
+        <div
+          class="row align-items-center justify-content-between flex-column flex-sm-row"
+        >
+          <div class="text-center">
+            <div class="small m-0">Copyright &copy; 2026</div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
