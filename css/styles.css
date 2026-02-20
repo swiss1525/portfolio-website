@@ -2357,9 +2357,9 @@ progress {
 .form-control:focus {
   color: #212529;
   background-color: #fff;
-  border-color: #8f98f9;
+  border-color: var(--bs-secondary);
   outline: 0;
-  box-shadow: 0 0 0 0.25rem rgba(30, 48, 243, 0.25);
+  box-shadow: 0 0 0 0.25rem rgba(0, 255, 135, 1);
 }
 .form-control::-webkit-date-and-time-value {
   height: 1.5em;
@@ -4253,7 +4253,7 @@ fieldset:disabled .btn {
 }
 .navbar-nav .show > .nav-link,
 .navbar-nav .nav-link.active {
-  color: var(--bs-navbar-active-color);
+  color: var(--bs-primary);
 }
 .navbar-nav .dropdown-menu {
   position: static;
@@ -4695,11 +4695,10 @@ fieldset:disabled .btn {
 }
 
 .card-project {
-  transition: 0.5s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
 .card-project:hover {
-  transform:translateY(-20px);
 transform: scale(1.05);
 }
 
